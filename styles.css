@@ -1,0 +1,208 @@
+/* Importando la fuente Poppins de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4A90E2;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin: 0;
+}
+
+/* Contenedor principal que ocupa todo el espacio disponible */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+/* Estilo de la caja de contenido */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de las secciones */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de las áreas de texto */
+textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+}
+
+/* Estilo del contenedor de salida */
+.output-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#output-text {
+    flex: 1;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Estilo de los enlaces e imágenes */
+.image-links {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.image-links img {
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.image-links img:first-child {
+    margin-left: 0;
+}
+
+.image-links img:nth-child(2) {
+    margin-right: 100px; /* Espacio extra entre la segunda imagen y la de LinkedIn */
+}
+
+#linkedin-btn img {
+    width: 80px;
+    height: auto;
+}
+
+#linkedin-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Estilo del mensaje de validación */
+#validation-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #4A90E2;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .output-container {
+        flex-direction: column;
+    }
+
+    #copy-btn {
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    .image-links {
+        flex-direction: column;
+    }
+
+    .image-links img {
+        margin: 10px 0;
+    }
+
+    .image-links img:nth-child(2) {
+        margin-right: 0; /* Quitar el margen extra en dispositivos pequeños */
+    }
+}
+
+/* Alineación de botones en una sola línea */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

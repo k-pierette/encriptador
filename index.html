@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo-encriptador.png" alt="Logo del Encriptador">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section>
+                <textarea id="input-text" placeholder="Introduce el texto aquí..."></textarea>
+                <div class="button-container">
+                    <button id="encrypt-btn">ENCRIPTAR</button>
+                    <button id="decrypt-btn">DESENCRIPTAR</button>
+                </div>
+                <div class="output-container">
+                    <textarea id="output-text" placeholder="Texto encriptado/desencriptado aparecerá aquí..." readonly></textarea>
+                    <button id="copy-btn">COPIAR</button>
+                </div>
+                <p id="validation-message"></p>
+                <div class="image-links">
+                    <img src="imagenes/alura.png" alt="Logo Alura">
+                    <img src="imagenes/logo-one.png" alt="Logo ONE">
+                    <a id="linkedin-btn" href="https://www.linkedin.com/in/camilo-n-836b71166/" target="_blank">
+                        <img src="imagenes/linkedin-logo.png" alt="LinkedIn Logo">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Creado por Camilo Nieto Pierette - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
